@@ -1,0 +1,85 @@
+.services-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.services-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #00aaff; /* Updated */
+}
+
+.services-header p {
+  font-size: 17px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.service-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 15px;
+  border-radius: 18px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+  border: 1px solid rgba(0, 170, 255, 0.25); /* Updated */
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 170, 255, 0.25); /* Updated */
+  border-color: #00aaff; /* Updated */
+}
+
+/* ICON */
+.service-icon {
+  font-size: 50px;
+  color: #00aaff; /* Updated */
+  margin-bottom: 15px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.15);
+}
+
+/* TITLE */
+.service-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* DESCRIPTION */
+.service-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .services-header h2 {
+    font-size: 28px;
+  }
+}

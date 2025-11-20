@@ -1,0 +1,38 @@
+/* Main container */
+.social-container {
+  position: absolute;
+  left: -10px;          
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 0;
+}
+
+.social-icon {
+  font-size: 26px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.7);
+}
+
+.whatsapp { color: #25D366; }
+.linkedin { color: #0077b5; }
+.instagram { color: #e1306c; }
+.youtube { color: #ff0000; }
+.github { color: #ffffff; }
+
+
+@media (min-width: 900px) {
+  .social-container {
+    left: -50px;       
+  }
+}

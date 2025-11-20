@@ -1,0 +1,180 @@
+.about-unique {
+  width: 100%;
+  padding: 100px 20px;
+  background: #000;
+  color: white;
+}
+
+.about-wrapper {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* LEFT PANEL */
+.about-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glow behind image */
+.glow-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 200, 255, 0.8),
+    rgba(0, 200, 255, 0.15),
+    transparent
+  );
+  border-radius: 50%;
+  filter: blur(35px);
+  z-index: 0;
+}
+
+.profile-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+  border: 4px solid #0ddaff;
+}
+
+/* Highlight panels */
+.highlight-box {
+  background: #0f0f0f;
+  width: 85%;
+  padding: 18px 22px;
+  border-left: 4px solid #0ddaff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.2);
+}
+
+.highlight-box h3 {
+  font-size: 20px;
+  color: #0ddaff;
+  margin-bottom: 5px;
+}
+
+/* RIGHT PANEL */
+.about-right {
+  flex: 1.4;
+}
+
+.about-heading {
+  font-size: 45px;
+  font-weight: 800;
+  color: #0ddaff;
+  margin-bottom: 15px;
+}
+
+.about-desc {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.highlight-color {
+  color: #0ddaff;
+  font-weight: bold;
+}
+
+.sub-heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* SKILLS FLOATING GRID */
+.skills-floating {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.skill-card {
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px) scale(1.05);
+}
+
+.skill-card img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.skill-card p {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #ccc;
+}
+
+/* BUTTON */
+.connect-btn {
+  padding: 14px 34px;
+  background: #0ddaff;
+  color: #000;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.connect-btn:hover {
+  background: #0bb0cc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .profile-card {
+    width: 260px;
+    height: 260px;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-wrapper {
+    text-align: center;
+  }
+
+  .about-right {
+    text-align: center;
+  }
+
+  .highlight-box {
+    width: 100%;
+  }
+
+  .skills-floating {
+    justify-content: center;
+  }
+}
