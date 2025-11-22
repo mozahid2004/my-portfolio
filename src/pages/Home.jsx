@@ -7,7 +7,7 @@ import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 const Home = () => {
   useEffect(() => {
-    const texts = ["Web Developer", "Entrepreneur", "Video Editor"];
+    const texts = ["Web Developer", "Entrepreneur"];
     const typingEl = document.querySelector(".typing-text");
     let index = 0;
     let charIndex = 0;
@@ -42,8 +42,8 @@ const Home = () => {
 
   return (
     <section id="home" className="home">
-        {/* LEFT SIDE */}
-        <div className="home-left">
+      {/* LEFT SIDE */}
+      <div className="home-left">
         <div className="image-border">
           <img src={myImage} alt="My Photo" className="home-img" />
         </div>
@@ -61,7 +61,7 @@ const Home = () => {
           customers, and increase your revenue.
         </p>
 
-        <a href="tel:+918260760349" className="home-btn call-btn">
+        {/* <a href="tel:+918260760349" className="home-btn call-btn">
           <FaPhoneAlt className="btn-icon" /> Call Now
         </a>
         <a
@@ -71,12 +71,18 @@ const Home = () => {
           className="home-btn whatsapp-btn"
         >
           <FaWhatsapp className="wa-icon" /> Chat on WhatsApp
-        </a>
+        </a> */}
+
+        <div className="button-group">
+          <a href="#" className="call-btn">Call</a>
+          <a href="#" className="home-btn">Hire Me</a>
+          <a href="#" className="whatsapp-btn">WhatsApp</a>
+        </div>
 
 
       </div>
 
-    
+
     </section>
   );
 };
