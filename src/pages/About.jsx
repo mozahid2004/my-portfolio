@@ -41,55 +41,56 @@ export default function About() {
 
           {/* FLOATING SKILL CARDS */}
           <div className="skills-floating">
+
             <div className="skill-card">
-              <img src="../../Public/Icons/HTMLIcon.jpeg" alt="HTML" />
+              <img src="/Icons/HTMLIcon.jpeg" alt="HTML" />
               <p>HTML</p>
             </div>
 
             <div className="skill-card">
-              <img src="../../Public/Icons/CSSIcon.jpeg" alt="CSS" />
+              <img src="/Icons/CSSIcon.jpeg" alt="CSS" />
               <p>CSS</p>
             </div>
 
             <div className="skill-card">
-              <img src="../../Public/Icons/JavaScriptIcon.jpeg" alt="JS" />
+              <img src="/Icons/JavaScriptIcon.jpeg" alt="JS" />
               <p>JavaScript</p>
             </div>
 
             <div className="skill-card">
-              <img src="../../Public/Icons/ReactIcon.jpeg" alt="React" />
+              <img src="/Icons/ReactIcon.jpeg" alt="React" />
               <p>React</p>
             </div>
 
             <div className="skill-card">
-              <img src="../../Public/Icons/NodeIcon.jpeg" alt="Node" />
+              <img src="/Icons/NodeIcon.jpeg" alt="Node" />
               <p>Node.js</p>
             </div>
 
             <div className="skill-card">
-              <img src="../../Public/Icons/MongoDBIcon.jpeg" alt="Mongo" />
+              <img src="/Icons/MongoDBIcon.jpeg" alt="Mongo" />
               <p>MongoDB</p>
             </div>
 
             <div className="skill-card">
-              <img src="../../Public/Icons/GitIcon.jpeg" alt="Git" />
-              <p>MongoDB</p>
+              <img src="/Icons/GitIcon.jpeg" alt="Git" />
+              <p>Git</p>
             </div>
 
             <div className="skill-card">
-              <img src="../../Public/Icons/GithubIcon.jpeg" alt="GitHub" />
-              <p>MongoDB</p>
+              <img src="/Icons/GithubIcon.jpeg" alt="GitHub" />
+              <p>GitHub</p>
             </div>
 
           </div>
-          
+
           <a
             href="#footer"
             className="connect-btn"
             onClick={(e) => {
               e.preventDefault();
               document.querySelector("#footer").scrollIntoView({
-                behavior: "smooth"
+                behavior: "smooth",
               });
             }}
           >
