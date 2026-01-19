@@ -482,3 +482,24 @@ body {
     padding: 18px 0;
   }
 }
+
+.repo-btn, .live-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.repo-btn {
+  background: #24292e; /* GitHub black */
+  color: #fff;
+}
+
+.live-btn {
+  background: #5c52ee;
+  color: #fff;
+}
+
+.repo-btn:hover, .live-btn:hover {
+  opacity: 0.9;
+}

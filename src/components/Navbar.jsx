@@ -76,7 +76,7 @@ const Navbar = () => {
       </ul>
 
       {/* Right Button */}
-      <a href="../../Public/Mozahid_Izhar.pdf" download className="btn-quote">
+      <a href="../../public/MOZAHID.pdf" download className="btn-quote">
         Download CV
       </a>
 
