@@ -79,6 +79,10 @@ const Navbar = () => {
         Download CV
       </a>
       
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7148f51c935c21ec121ddbddb8db29446cc3da6f
       {/* Hamburger */}
       <div className="hamburger" onClick={() => setOpen(!open)}>
         <span></span>
