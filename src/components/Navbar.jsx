@@ -76,9 +76,10 @@ const Navbar = () => {
       </ul>
 
       {/* Right Button */}
-      <a href="../../public/MOZAHID.pdf" download className="btn-quote">
+      <a href="/MOZAHID.pdf" download className="btn-quote">
         Download CV
       </a>
+      
 
       {/* Hamburger */}
       <div className="hamburger" onClick={() => setOpen(!open)}>
