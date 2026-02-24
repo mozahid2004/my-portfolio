@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
-// impor
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -49,7 +48,7 @@ const Navbar = () => {
     setOpen(false);
   };
 
-  
+
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       {/* Logo */}
@@ -72,14 +71,14 @@ const Navbar = () => {
         <li>
           <button onClick={() => scrollToSection("about")}>About</button>
         </li>
-       
+
       </ul>
 
       {/* Right Button */}
-      <a href="../../public/MOZAHID.pdf" download className="btn-quote">
+      <a href="/MOZAHID.pdf" download className="btn-quote">
         Download CV
       </a>
-
+      
       {/* Hamburger */}
       <div className="hamburger" onClick={() => setOpen(!open)}>
         <span></span>
